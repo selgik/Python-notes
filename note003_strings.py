@@ -49,4 +49,9 @@ print("pingapple\rPine")                            #\r --> result is Pineapple
 print("pineT\bapple")                               #\b --> result is pineapple
 print("Fine\tApple")                                #\t --> result is Fine        Apple (like using a tab key)
 
+#6. Using variables
+
+
+
+
 
