@@ -162,7 +162,6 @@ print("Total {} guests had a ride" .format(index))
 #       I wanted to give pararell/multiple for, not nested for. Hence found for (a, b) in zip(x, y)
 
 #2) Right answer
-
 from random import *
 cnt = 0
 for i in range(1,51):
