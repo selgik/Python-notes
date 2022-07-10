@@ -56,6 +56,51 @@ comission, balance = night_withdraw(balance, 300) #valeus returned as a result o
 print("comission is {}, current balance is {}." .format(comission, balance))
 
 ########## 2. DEFAUT ARGUMENT
+#1) create profiles for new hires
+def profile(name, age, dept):
+  print("Name: {0}, age: {1}, department: {2}" \   #if sentence is getting longer, we can use \to organize codes.
+        .format(name, age, dept))                  #same as: print("Name: {0}, age: {1}, department: {2}" .format(name, age, dept)) 
+profile("Ron K.", 25, "Sales")                        
+profile("Jim A.", 43, "R&D")
+profile("Son E.", 33, "Admin")
 
+#2) imagine all new hires are 30 and belong to Sales dept. Instead of writing same arguments repetitively, defulat argument can be used as below:
+def profile(name, age = 30, dept = "Sales"):
+  print("Name: {0}, age: {1}, department: {2}" .format(name, age, dept))  
+profile("Ron K.")                        
+profile("Jim A.")
+profile("Son E.")
+
+########## 3. KEYWORD ARGUMENT
+def profile(name, age, dept):
+  print("Name: {0}, age: {1}, department: {2}" .format(name, age, dept))  
+
+profile(detp = "Finance", name = "Terry R.", age = 45) #order does not matter.
+
+########## 4. ARBITRARY ARGUMENT
+#1) create profiles for new hires
+def profile(name, age, c_lang1, c_lang2, c_lang3, c_lang4, c_lang5):
+  print("Name: {0}, age: {1}" .format(name, age), end=" ")  #end= " " allows next line to print without new line.
+  print("Computer languages:" + c_lang1, c_lang2, c_lang3, c_lang4, c_lang5)
+ 
+profile("Tadek", 30, "Python", "SQL", "R", "C", "C++")
+profile("Ukasz", 24, "Java", "Python", " ", " ", " ")
+
+#Problem: we need to create a profile for Ukasz who can only do 2 computer languages.
+#         also, what if Tadek happens to obtain more computer language skills? We need more flexible codes for these.
+
+#2) use arbitrary argument
+def profile(name, age, *c_lang):
+  print("Name: {0}, age: {1}" .format(name, age), end=" ")  #end= " " allows next line to print without new line.
+  for lang in c_lang:
+    print(lang, end= " ") #without end= " ", all c_lang values will be printed in new line
+  print()                 #without print(), Ukeasz's profile will be crated in the same line as Tadek's
+  
+profile("Tadek", 30, "Python", "SQL", "R", "C", "C++", "Java")
+profile("Ukasz", 24, "Java", "Python")
+
+########## 5. GLOBAL VS LOCAL VARIABLES
+
+ 
 
 
