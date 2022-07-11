@@ -154,9 +154,20 @@ print("{} remaining candies." .format(candy))
 #11 remaining candies.  --> as line 148 was executed, candy value was updated to 11. Hence result is 11. 
   
 ########## 6. EXERCISE
-  
-  
-  
-  
+# create a function that calculates standard weight for female (height_m * height_m * 21) and male (height_m * height_m * 22)
+# use two arguments, height and gender. Standard weight should have max two decimal places. 
 
-
+def standard_wcal(height, gender):
+  if gender == "female":
+    return height * height * 21
+  else: 
+    return height * height * 22
+  
+height = 160
+gender = "female"
+standard_wg = round(standard_wcal(height, gender)/10000, 2)
+#or: standard_wg = round(standard_wcal(height/100, gender), 2)
+print("Standard weight for {} with {} cm height is {}." \
+      .format(gender, height, standard_wg)
+      
+  
