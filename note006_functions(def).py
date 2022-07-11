@@ -100,7 +100,63 @@ profile("Tadek", 30, "Python", "SQL", "R", "C", "C++", "Java")
 profile("Ukasz", 24, "Java", "Python")
 
 ########## 5. GLOBAL VS LOCAL VARIABLES
-
+#1) global variable: variables, created outside the function
+#   local variable: variables, created inside the function
  
+candy = 15  
+def candy_checker(child):
+  candy = 10
+  candy = candy - child
+  print("[Inside Function] {} candies left." .format(candy))
+
+print("{} total candies." .format(candy))
+candy_checker(4)
+print("{} remaining candies." .format(candy))
+  
+#results:
+#15 total candies. --> this is using global variable candy = 15
+#[Inside Function] 6 candies left. --> this is using local variable candy = 10
+#15 remaining candies.  --> this is using global variable candy = 15
+
+#2) rewrite above using global variable
+candy = 15  
+def candy_checker(child):
+  globa candy
+  candy = candy - child
+  print("[Inside Function] {} candies left." .format(candy))
+
+print("{} total candies." .format(candy))
+candy_checker(4)
+print("{} remaining candies." .format(candy))
+  
+#results:
+#15 total candies. --> this does not go through function hence still 15.
+#[Inside Function] 11 candies left. --> 15-4=11
+#11 remaining candies.  --> candy's value is stored as 11 from previous execution.
+
+#tip: 
+#apparently, it is not easy to manage global variable hence it is not recommended to use them. Instead, 
+
+#3) recommended:
+candy = 15  
+def candy_checker(candy, child):
+  candy = candy - child
+  print("[Inside Function] {} candies left." .format(candy))
+  return candy  #re2
+
+print("{} total candies." .format(candy))
+candy = candy_checker(candy, 4) #ref3
+print("{} remaining candies." .format(candy))
+  
+#results:
+#15 total candies. --> this does not go through function hence still 15.
+#[Inside Function] 11 candies left. --> by executing line 148, print function of line 144 gets executed
+#11 remaining candies.  --> as line 148 was executed, candy value was updated to 11. Hence result is 11. 
+  
+########## 6. EXERCISE
+  
+  
+  
+  
 
 
