@@ -1,6 +1,6 @@
 #note009_class.py
 
-########## 1. WHY WE NEED A CLASS
+########## 1. WHY DO WE NEED A CLASS
 # Let's think about this scenario. You are creating a game, StarCraft. 
 # You first create a Marine and then a tank.
 
