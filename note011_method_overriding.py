@@ -51,8 +51,8 @@ vulture.move("11 o'clock")
 battlecruiser.fly(battlecruiser.name, "10 o'clock")
 
 #problem is: we need to use move() or fly() depending on whether unit is ground or air one. 
-#solution: using method overriding, we can use one function and make both unit move/fly.
-#how to: add one more function under class Fly_AttackUnit :
+#solution: using method overriding, we can use one method and make both unit move/fly.
+#how to: add one more method under class Fly_AttackUnit :
 
 #2) Method overriding
               
@@ -77,4 +77,8 @@ battlecruiser.fly(battlecruiser.name, "10 o'clock")
  # [Air unit is moving]
  # Battlecruiser : Flying toward 10 o'clock direction. [Flying speed: 10]"
               
-              
+ #3) REMEBMER:
+ #   Vulture.move and Battlecruiser.move do NOT use the same method move(). 
+ #   Vulture is using move() from class AttackUnit -> class Unit -> method move
+ #   Battlecruiser is using move() from class Fly_AttackUnit -> method move
+         
