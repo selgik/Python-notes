@@ -90,3 +90,58 @@ class AttackUnit(Unit):   #AttackUnit is inheriting from Unit class
  #result: 
  #Valkyrie: Flying toward 2 o'clock direction. [Flying speed: 5]
         
+
+########## 3. SUPER
+#1) Let's create class Building inheriting from class Unit:
+class Building(Unit):
+    def __init__(self, name, hp, location):
+        Unit.__init__(self, name, hp)
+        self.location = location
+        
+# Using super, Unit.__init part can be changed as below:
+class Building(Unit):
+    def __init__(self, name, hp, location):
+        super().__init__(name, hp) 
+        self.location = location
+        
+# when using super, there is no need to add 'self'.
+# but problem will appear if super is used for multiple inheritance cases.
+
+#2) Using super in multiple inheritance:
+# let's simplify the example scenario.
+
+class First:
+    def __init__(self):
+        print("First printed")
+        
+class Second:
+    def __init__(self):
+        print("Second printed")
+        
+class Test(First, Second):
+    def __init__(self):
+        super().__init__()
+
+temp = Test()
+
+# result: First printed.
+#         If we change order as class Test(Second, First), result will be "Second printed".
+# When using super, function from the first parent class will be called. 
+# Therefore, when using super we need to make sure to use traditional multiple inheritance codes, like below:
+
+class First:
+    def __init__(self):
+        print("First printed")
+        
+class Second:
+    def __init__(self):
+        print("Second printed")
+        
+class Test(First, Second):
+    def __init__(self):
+        Fist.__init__(self)
+        Second.__init__(self)
+
+temp = Test()
+
+#result: First printed Second printed
