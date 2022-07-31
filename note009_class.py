@@ -125,3 +125,36 @@ firebat1.damaged(25)
 #result: Nothing. system will run and finish.
 #        I haven't finished class Building but pass makes as if it is finished. (no error will appear)
       
+      
+########## 5. EXERCISE
+# create a class that prints out as below:
+#   We have three properties availalbe:
+#   Toa Payoh apartment sell 10 million 2010
+#   Paya Lebar condo yearly_rent 2 million 2007     
+#   Katong house monthly_rent 1 million 2020
+
+class House:
+   def__init__(self, location, house_type, deal_type, price, built_year):
+      self.location = location
+      self.house_type = house_type
+      self.deal_type = deal_type
+      self.price = price
+      self.built_year = built_year
+      
+   def show_detail(self):
+      print(self.location,  self.house_type, self.deal_type, self.price, self.built_year)
+      
+h1 = House("Toa Payoh", "apartment", "sell", "10 million", "2010")
+h2 = House("Paya Lebar", "condo", "yearly_rent", "2 million", "2007")    
+h3 = House("Katong", "house", "monthly_rent", "1 million", "2020")
+      
+houses = []
+houses.append(h1)
+houses.append(h2)
+houses.append(h3)
+      
+print("We have {} properties availalbe:" .format(len(houses)))
+for item in houses:
+      item.show_detail()
+      
+ 
