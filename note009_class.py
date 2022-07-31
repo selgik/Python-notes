@@ -113,3 +113,15 @@ firebat1.damaged(25)
 #Firebat: unit has been destroyed
       
       
+########## 4. PASS
+# By adding pass to class, we tell system to do nothing for now. 
+      
+  class Building:
+      def __init__(self, name, hp, location):
+        pass
+  
+  supply_depot = Building("Supply Depot", 300, "North")
+      
+#result: Nothing. system will run and finish.
+#        I haven't finished class Building but pass makes as if it is finished. (no error will appear)
+      
