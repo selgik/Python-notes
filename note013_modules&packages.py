@@ -1,4 +1,4 @@
-#note013_modules.py
+#note013_modules&packages.py
 
 ########## 1. MODULES
 # modules: file containing a set of functions (file that holds all parts). Modules in python has extension of .py
