@@ -20,7 +20,8 @@
 3. Alt + Enter: run current cell and create next cell. 
 4. DD: delete cell 
 5. II: interrupt run (stop execution)
-6. Kernel - Restart & Run All: restart and re-number all cells ASC.
+6. Cntr+S: save
+7. Kernel - Restart & Run All: restart and re-number all cells ASC.
 
 # Using modules
 1. If you want to check which functions modules provide, use tab
