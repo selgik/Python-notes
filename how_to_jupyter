@@ -1,0 +1,53 @@
+# How to download/open notebook
+1. Download from Anaconda
+2. Click Jupyter Notebook -> program will be launched at Chrome (recommended)
+3. Click new -> Python 3
+
+# What do you call it?
+1. cell: a line within the jupyter notebook.
+         blue colour means it's on order mode, green colour means it's on edit mode
+2. In [1] , In [2] ...: Input [1], Input [2]. Number incidates the order of execution.
+
+# How to test
+1. Click on cell and write code. 
+2. Click Run button
+3. Result will appear below the cell and new cell will appear.
+
+# Shortcuts
+1. Cntr + Enter: run current cell
+2. Shift + Enter: run current cell and select next cell. 
+   if no next cell exists, it will be created. 
+3. Alt + Enter: run current cell and create next cell. 
+4. DD: delete cell 
+5. II: interrupt run (stop execution)
+6. Kernel - Restart & Run All: restart and re-number all cells ASC.
+
+# Using modules
+1. If you want to check which functions modules provide, use tab
+   ex) import random
+       random. <-- use Tab key and functions will appear
+       
+# Ask about functions
+1. If you want to know more about the function, add ?
+   ex) random.randint?
+   result) summary of code explanation will appear
+2. If you want to check source code as well, add ??
+   ex) random.randint??
+
+# What's the benefit of using Jupyter?
+1. You can use Markdown: # for title, > for insert
+2. Write and run code on cell by cell
+3. Real time view of graph/table
+4. Save file as html or pdf.
+   --> say you saved file in html. You can share codes/results to those who do not use Jupyter.
+ 
+# Markdown cheetsheet
+1. Click M to change from code mode to markdownmode: in such case, In[n] will be gone.
+2. when you write a list, use 1. and the 1. not 1. 2. 3... 
+   by doing this, you won't have to change number list after editing/removing item from the list.
+   it will be auto-numbered.
+
+
+# Where is my Jupyter file/folder?
+- C drive - Users - myname 
+
