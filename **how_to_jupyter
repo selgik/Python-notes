@@ -1,6 +1,6 @@
-# How to download/open notebook
+# How to download/open jupyter notebook
 1. Download from Anaconda
-2. Click Jupyter Notebook -> program will be launched at Chrome (recommended)
+2. Click Jupyter Notebook -> program will be launched at Chrome (recommended browser)
 3. Click new -> Python 3
 
 # What do you call it?
@@ -10,8 +10,8 @@
 
 # How to test
 1. Click on cell and write code. 
-2. Click Run button
-3. Result will appear below the cell and new cell will appear.
+2. Click Run button (or use shortcuts)
+3. Result will appear below the cell.
 
 # Shortcuts
 1. Cntr + Enter: run current cell
@@ -35,19 +35,20 @@
    ex) random.randint??
 
 # What's the benefit of using Jupyter?
-1. You can use Markdown: # for title, > for insert
+1. You can use Markdown: # for title, > for insert etc.
 2. Write and run code on cell by cell
 3. Real time view of graph/table
 4. Save file as html or pdf.
    --> say you saved file in html. You can share codes/results to those who do not use Jupyter.
  
 # Markdown cheetsheet
-1. Click M to change from code mode to markdownmode: in such case, In[n] will be gone.
+1. ESC - M to change from code mode to markdownmode: in such case, In[n] will be gone.
 2. when you write a list, use 1. and the 1. not 1. 2. 3... 
    by doing this, you won't have to change number list after editing/removing item from the list.
    it will be auto-numbered.
 
-
 # Where is my Jupyter file/folder?
-- C drive - Users - myname 
+1. C drive - Users - myname 
+2. Share .ipynb file so that others can test code chunks too.
 
+- END -
