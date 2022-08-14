@@ -8,6 +8,6 @@
     - exercise 001- exercise 002
 
 ## Part2: Data Analysis and Visualization
-- Tool: Anaconda, jupyter notebook
+- Tool: Anaconda, Jupyter Notebook
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note015 - TBD
