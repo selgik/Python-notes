@@ -50,6 +50,10 @@
 
 # Where is my Jupyter file/folder?
 1. C drive - Users - myname 
+   - Folder: PythonDataWorkspace 
+         - Pandas: for data analysis
+         - Matplotlib: for data vizualization
+         - Project: for project
 2. Share .ipynb file so that others can test code chunks too.
 
 - END -
