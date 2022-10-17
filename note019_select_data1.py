@@ -46,6 +46,10 @@ df[3:]                #result: all column's information will be brought in from 
 
 
 ########## 2. SELECT COLUMN(loc)
+# (From: https://www.w3resource.com/pandas/dataframe/dataframe-loc.php)
+#       The loc property is used to access a group of rows and columns by label(s) or a boolean array.
+#       .loc[] is primarily label based, but may also be used with a boolean array.
+
 #using index, select columns
 #using other data will not work (ex df.loc['Chae'] gives an error)
 
