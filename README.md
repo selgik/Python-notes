@@ -10,6 +10,6 @@
 ## Part2: Data Analysis and Visualization
 - Tool: Anaconda, Jupyter Notebook
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
-- From note015, below dataframe is used:
+- From note 015, below dataframe is used:
 
 ![df](https://user-images.githubusercontent.com/91002274/196036209-5749b56d-ef46-44e6-9c6f-20421492495b.png)
