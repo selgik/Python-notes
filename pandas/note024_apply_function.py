@@ -46,7 +46,7 @@ df['sw'] = df['sw'].apply(cap)
 df
 
 #Actully, above can simply be written as below:
-df['sw'].str. ccapitalize()
+df['sw'].str.capitalize()
 
 #For permanent change, need to update as below:
 df['sw'] = df['sw'].str.capitalize()
