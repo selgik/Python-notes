@@ -64,9 +64,19 @@ school = df.groupby('school')
 school['grade'].value_counts()
 
 #5) let's count how many students are per school and grade, where school = Buk
-# .loc will only work with this code from #4
+df.groupby(['school','grade']).size()['Buk']
+df.groupby('school')['grade'].value_counts()['Buk']
+
 school = df.groupby('school')
 school['grade'].value_counts().loc['Buk']
+
+#result from above three codes are the same:
+#1  2
+#2  1
+#3  2
+
+### however, below code will show result as 5
+df.groupby('school')['grade'].counts()['Buk']
 
 #6) let's calculate percentage of total using normalize()
 school = df.groupby('school')
