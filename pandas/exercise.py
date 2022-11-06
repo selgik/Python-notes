@@ -1,4 +1,4 @@
-#note026_exercise.py 
+#exercise.py 
 
 import pandas as pd
 data = {
