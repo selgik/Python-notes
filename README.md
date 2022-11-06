@@ -20,4 +20,4 @@
 - Tool: Jupyter Notebook
 - Folder: matplotlib
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
-    - note027~
+    - note026~
