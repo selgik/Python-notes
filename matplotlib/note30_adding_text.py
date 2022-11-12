@@ -1,5 +1,4 @@
 #note30_adding_text.py
-
 #prepare libraries and settings
 
 import matplotlib.pyplot as plt
