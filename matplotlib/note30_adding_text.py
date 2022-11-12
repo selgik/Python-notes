@@ -17,7 +17,7 @@ plt.plot(x,y)
 plt.text(2,4,'important', fontsize=8)   #result: text will appear in the place of x=2, y=4 with fontsize 8
 
 
-########## 2. ENUMERATE
+########## 2. ADD TEXT WITH ENUMERATE()
 #1) scneario: I want to add text right next to the marker (where x value and y value meets)
 plt.plot(x,y,marker='o')
 for idx, txt in enumerate(y):
