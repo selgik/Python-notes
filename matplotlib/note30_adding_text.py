@@ -11,7 +11,7 @@ x=[1,2,3]
 y=[2,4,8]
 
 
-########## 1. ADD TEXT (BASIC)
+########## 1. ADD TEXT (SYNTAX)
 #syntax: plt.text(x,y,s) where x, y = float values, position to place the text and s is string
 plt.plot(x,y)
 plt.text(2,4,'important', fontsize=8)   #result: text will appear in the place of x=2, y=4 with fontsize 8
