@@ -17,5 +17,6 @@ df = pd.read_excel('../Pandas/score.xlsx')
 ########## 2. SELECT LABELS AND VALUES
 plt.plot(df['app_name'], df['eng'])
 plt.plot(df['app_name'], df['math'])
-        
+
+# result: line charts with two data 
    
