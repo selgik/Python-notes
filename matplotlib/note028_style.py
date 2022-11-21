@@ -67,7 +67,18 @@ plt.figure(facecolor='#03c2fc')
 plt.plot(x,y)
 
 
-########## 4. GRAPH: SIZE, DPI
+########## 4. GRID LINES
+#1) add grid lines to help read the data easily
+plt.grid()
+
+#2) add grid lines only to specific axis
+plt.grid(axis='x')
+
+#3) add format to grid lines
+plt.grid(axis='y', color='purple', alpha=0.2, ls='--', lw=2)
+
+
+########## 5. GRAPH: SIZE, DPI
 #1) change graph size
 plt.figure(figsize=(10,5))    #width:10, height:5
 plt.plot(x,y)
@@ -77,7 +88,7 @@ plt.figure(figsize=(10,5), dpi=200)
 plt.plot(x,y)
 
 
-########## 5.FORMAT
+########## 6.FORMAT
 #adding various arguments may end up in long code. There are alias.
 #1) color marker linestyle
 plt.plot(x,y,'ro--')             #result: red line with circle marker, -- line
