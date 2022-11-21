@@ -5,7 +5,7 @@
 # Pandas: data analysis library in Python
 
 #1) Create Series object
-# usingl list, create 1 dimensional data -> Series.
+# using list, create 1 dimensional data -> Series.
 import pandas as pd
 temp = pd.Series([-20, -10, 10, 20])
 temp   # in Jupyter Notebook, you don't have to use print(temp)
