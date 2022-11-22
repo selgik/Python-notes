@@ -1,4 +1,4 @@
-#note31_multiple_data.py
+#note031_multiple_data.py
 #prepare libraries and settings
 
 import matplotlib.pyplot as plt
