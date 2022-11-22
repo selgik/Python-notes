@@ -1,4 +1,4 @@
-#note32_bar_chart.py
+#note33_bar_chart.py
 #prepare libraries and settings
 
 import matplotlib.pyplot as plt
