@@ -1,4 +1,4 @@
-#note34_stakced_bar_chart.py
+#note034_stakced_bar_chart.py
 #prepare libraries and settings
 
 import matplotlib.pyplot as plt
