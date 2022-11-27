@@ -73,7 +73,7 @@ print(dic)                                #result is {}
 menu = ("Burger", "Dimsum", "Kimchi")
 print(menu)                               #result is ('Burger', 'Dimsum', 'Kimchi')
 print(menu[0])                            #result is Burger
-# Usage: instead of line 74-77 , we can use tuple like line 79-80:
+# Usage: instead of line 77-80, we can use tuple like line 82-83:
 name = "Kim"
 age = 25
 hobby = "boxing"
