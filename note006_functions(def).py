@@ -22,7 +22,7 @@ balance = 1000
 balance = deposit(balance, 300)         # failure note: print(balance, 100) --> result is: You have depositied 300, now your balance is 1000.
 print(balance)
 
-# result of 22: You have depositied 300, now your balance is 1300.
+# result of 22: You have depositied 300, now your balance is 1000.
 # result of 23: 1300
 
 #3) use two functions. 
