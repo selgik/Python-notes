@@ -24,8 +24,8 @@ num_list.insert(2,15)
 print(numb_list)                          #result is [10, 24, 15, 20]
 num_list.sort()                           #sort() will sort list ASC order    
 print(num_list)                           #result is [10, 15, 20, 24]
-num_list.reverse()                        #reverse() will sort list DESC order
-print(num_list)                           #result is [24, 20, 15, 10]
+num_list.reverse()                        #reverse() will sort list order in reverse way. Result will be [20, 15, 24, 10]
+num_list.sort(reverse=True)               #this will sort list values in desc order. Result will be [24, 20, 15, 10]
 
 # NOTE: print(num_list.sort()) did not work out. It returned "None". 
 # My question is why? Why can't I directly modify and see the result?
