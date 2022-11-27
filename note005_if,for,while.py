@@ -82,8 +82,8 @@ while True:
 guest = "Martin"
 cust = "Doe"
 
-while check != guest:
-    print("{}, your coffee is ready!" .forat(guest))
+while cust != guest:
+    print("{}, your coffee is ready!" .format(guest))
     cust = input("what's your name?")
     
 #now let's ask guest's name first and compare whether their coffee is ready. 
