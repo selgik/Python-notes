@@ -18,8 +18,9 @@ print(num_list)                           #append will add value in the end of t
 num_list.insert(1, 24)                    
 print(num_list)                           #insert will add value in the designated place: result is [10, 24, 15, 20, 33]
 print(num_list.pop())                     #pop removes the last item in the list which is, 33. print(num_list) will be then [10, 24, 15, 20]
-print(num_list.pop(1))                    #removed item will be index#1 which is 24. print(num_list) will be then [10, 15, 20]
+print(num_list.pop(2))                    #removed item will be index#1 which is 15. print(num_list) will be then [10, 24, 20]
 
+num_list.insert(2,15)
 print(numb_list)                          #result is [10, 24, 15, 20]
 num_list.sort()                           #sort() will sort list ASC order    
 print(num_list)                           #result is [10, 15, 20, 24]
