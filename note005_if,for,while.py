@@ -55,7 +55,7 @@ turn = 5
 
 while turn >= 1:
     print("{}, your coffee is ready! {} calling time left!" .format(guest, turn-1))
-    index -= 1
+    turn -= 1
 if turn == 0:
     print("Coffee is thrown away...")
     
