@@ -17,13 +17,8 @@ plt.show()
 
 #2) add proportion %
 plt.pie(values, labels = lbs, autopct = '%.1f')   #proportion will show up as: 25.0, 20.0, 13.0, 10.0, 2.0, 30.0
-plt.show()
-
 plt.pie(values, labels = lbs, autopct = '%.1f%%') #proportion will show up as: 25.0%, 20.0%, 13.0%, 10.0%, 2.0%, 30.0%
-plt.show()
-
 plt.pie(values, labels = lbs, autopct = '%.0f%%') #proportion in integer form as: 25%, 20%, 13%, 10%, 2%, 30%
-plt.show()
 
 #3) adding labels 
 plt.pie(values, labels = lbs)    
@@ -41,12 +36,10 @@ values = [30, 25, 20, 13, 2, 10]
 lbs = ['Python', 'Java', 'Javascript', 'C#', 'C/C++', 'ETC']
 
 plt.pie(values, labels = lbs, startangle=90)      
-plt.show()
 
 #2) setting direction: show data clockwise
 #without counterclock parameter, data show counterclockwise
 plt.pie(values, labels = lbs, autopct = '%.1f%%', startangle=90, counterclock=False)   
-plt.show()
 
 #3) slice effect: to particular part
 values = [30, 25, 20, 13, 2, 10]    
@@ -54,7 +47,6 @@ lbs = ['Python', 'Java', 'Javascript', 'C#', 'C/C++', 'ETC']
 expl = [0.2, 0.2, 0, 0, 0, 0]
 
 plt.pie(values, labels = lbs, explode = expl)     #by adding explode parameter, Python and Java part will be separated (highlighted) from the rest. 
-plt.show()
 
 #4) slice effect: to every part
 values = [30, 25, 20, 13, 2, 10]    
@@ -62,7 +54,6 @@ lbs = ['Python', 'Java', 'Javascript', 'C#', 'C/C++', 'ETC']
 expl = [0.05]*6                                   #all parts will be separated from each other
 
 plt.pie(values, labels = lbs, explode = expl)    
-plt.show()
 
 
 ########## 3. ASSIGNING COLORS 
@@ -72,7 +63,6 @@ lbs = ['Python', 'Java', 'Javascript', 'C#', 'C/C++', 'ETC']
 clos = ['b', 'g', 'r', 'c', 'm', 'y']
 
 plt.pie(values, labels = lbs, autopct = '%.1f%%', startangle=90, counterclock=False, colors=clos)
-plt.show()
 
 #2) use HEX 
 values = [30, 25, 20, 13, 2, 10]    
@@ -80,7 +70,6 @@ lbs = ['Python', 'Java', 'Javascript', 'C#', 'C/C++', 'ETC']
 clos = ['#ffadad', '#ffd6a5', '#fdffb6', '#caffbf', '#9bf6ff', '#a0c4ff']   #pastel colors
 
 plt.pie(values, labels = lbs, autopct = '%.1f%%', startangle=90, counterclock=False, colors=clos)
-plt.show()
 
 
 ########## 4. USING DATAFRAME
