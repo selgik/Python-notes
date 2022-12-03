@@ -1,4 +1,4 @@
-#note036_donut_chart.py
+#note037_donut_chart.py
 #prepare libraries and settings
 
 import matplotlib.pyplot as plt
