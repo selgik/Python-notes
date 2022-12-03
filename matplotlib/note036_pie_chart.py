@@ -22,6 +22,9 @@ plt.show()
 plt.pie(values, labels = lbs, autopct = '%.1f%%') #proportion will show up as: 25.0%, 20.0%, 13.0%, 10.0%, 2.0%, 30.0%
 plt.show()
 
+plt.pie(values, labels = lbs, autopct = '%.0f%%') #proportion in integer form as: 25%, 20%, 13%, 10%, 2%, 30%
+plt.show()
+
 #3) adding labels 
 plt.pie(values, labels = lbs)    
 plt.legend(loc = (1.2, 0.3))                      #label card will show on the right side of graph. Without loc, card will cover the graph.   
