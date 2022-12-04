@@ -1,4 +1,4 @@
-#note026_basic.py
+#note026_line_chart.py
 
 
 ########## 1. MATPLOTLIB
