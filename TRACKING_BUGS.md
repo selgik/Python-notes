@@ -25,3 +25,6 @@ but I did not have any other list.
 Somewhere in the system, plt.xlabel was treated like list. So even after changing B to A, system still showed an error. 
 Only when I restarted & run all for jupyter, lables were showing up.
 - Reference: [stake overflow case](https://stackoverflow.com/questions/35030659/unexpected-python-typeerror-list-object-is-not-callable)
+- Date: Dec 4, 2022
+
+  
