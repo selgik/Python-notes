@@ -1,5 +1,6 @@
 # Python-practice
 - In Progress
+- TRACKING_BUGS.md file has been generated (Dec 04, 2022)
 
 ## Part1: Basic
 - Tool : Visual Studio Code
