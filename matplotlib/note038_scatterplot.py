@@ -17,7 +17,7 @@ plt.xlabel('eng scores')
 plt.ylabel('math scores')
 
 
-########## 2. ASSIGNING SIZE
+########## 2. ASSIGN SIZE
 #1) assign different sizes for the circle
 #let's add grade column (1st grade, 2nd grade, 3rd grade) to the df to use it as a guide for sizes
 df['grade'] = [3,3,2,1,1,3,2,2]
@@ -37,7 +37,7 @@ plt.xlabel('eng scores')
 plt.ylabel('math scores')
 
 
-########## 3. ASSIGNING COLOR
+########## 3. ASSIGN COLOR
 #reference for the color map = https://matplotlib.org/stable/tutorials/colors/colormaps.html
 
 #1) assign colors 
@@ -59,7 +59,7 @@ plt.xlabel('eng scores')
 plt.ylabel('math scores')
 
 
-########## 4. ADDING COLOR BAR
+########## 4. ADD COLOR BAR
 #1) add color bar (color legend)
 plt.figure(figsize=(7,7))               #let's adjust size of graph
 sizes=df['grade']*500
