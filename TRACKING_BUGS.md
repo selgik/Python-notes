@@ -1,7 +1,6 @@
 ## CREATING NOTES TO TRACK ERRORS AND BUGS 
 
 ### 1. Type Error: list object is not callable
-#### 1) Background:
 - A. Situation: I was trying to create scatterplot using below code (ref: note038_scatterplot.py)
 ```python
 plt.scatter(df['eng'], df['math'])
