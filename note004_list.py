@@ -70,6 +70,9 @@ print(dic)                                #result is {}
 
 #3. Tuple ()
 # In tuple, we CANNOT add or edit items. Need to change Type first before making any changes to Tuples.
+# Why Tuple, not list? (1) to keep data secured (no adding/removing data) (2) tuple is faster than list (3) some tuples can be used in dictionary keys.
+# Ref: https://stackoverflow.com/questions/1708510/list-vs-tuple-when-to-use-each
+
 menu = ("Burger", "Dimsum", "Kimchi")
 print(menu)                               #result is ('Burger', 'Dimsum', 'Kimchi')
 print(menu[0])                            #result is Burger
