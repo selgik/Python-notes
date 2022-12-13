@@ -21,4 +21,11 @@
 - Tool: Jupyter Notebook
 - Folder: matplotlib
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
-    - note026~
+    - note026 - note039
+
+## Part4: Automation (RPA)
+- Tool : Visual Studio Code
+- Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
+    - note040 ~
+
+
