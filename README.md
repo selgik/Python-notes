@@ -25,6 +25,7 @@
 
 ## Part4: Automation (RPA)
 - Tool : Visual Studio Code
+- Folder: automation
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note040 ~
 
