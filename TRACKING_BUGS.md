@@ -31,7 +31,7 @@ Somewhere in the system, plt.xlabel was treated like list. So even after changin
 Only when I restarted & run all for jupyter, lables were showing up.
 
 
-### 2. Type Error: list object is not callable
+### 2. [Errno 13] Permission denied
 ----
 - Date: Dec 14, 2022
 - Note: note041_excel_cell.py
