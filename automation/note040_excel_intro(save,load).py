@@ -29,4 +29,23 @@ wb.close()
 
 ##what happens? nothing happens in the terminal but the file will be created on the VSC's EXPLORER section.
 
+
+########## 4. EXCEL: LOAD FILE
+# assuming that data has been added through note042_excel_cell.py, let's load data
+from openpyxl import load_workbook
+wb = load_workbook("sample.xlsx")
+ws = wb.active  #activated sheet
+
+#1) load data, knowing that we have data within table 10 x 10
+for x in range(1,11):
+  for y in range(1,11):
+    print(ws.cell(row=x, column=y).value, end=" ")
+  print()
+  
+#2) load data, assuming that we do not know how many rows/columns are there to pull out
+for x in range(1, ws.max_row+1):
+  for y in range(1, ws.max_column+1):
+    print(ws.cell(row=x, column=y).value, end= " ")
+  print()
+
   
