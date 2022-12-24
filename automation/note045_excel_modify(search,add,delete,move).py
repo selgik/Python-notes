@@ -1,4 +1,4 @@
-#note045_excel_modify.py 
+#note045_excel_modify(search,add,delete,move).py
 #prepare libraries and settings
 
 from openpyxl import load_workbook
@@ -29,7 +29,7 @@ ws.insert_rows(8, 5)                                  #empty 5lines will be inse
 #2) insert columns
 ws.insert_cols(2)                                     #empty column will be inserted in the 2nd (B) column
 ws.insert_cols(2, 3)                                  #empty 3lines will be inserted from the 2nd (B) column
-ws.save("sample_insert.xlsx")
+wb.save("sample_insert.xlsx")
 
 
 ########## 4. DELETE
@@ -40,5 +40,17 @@ ws.delete_rows(8, 3)                                  #3lines from 8th row will 
 #2) delete column
 ws.delete_cols(2)                                     #2nd (B) column will be deleted (after id column, math column will come)
 ws.delete_cols(2, 2)                                  #2lines from 2nd (B) column will be deleted
-ws.save("sample_delete.xlsx")
+wb.save("sample_delete.xlsx")
+
+
+########## 5. MOVE
+#1) move two columns to the right side (~similar to insert)
+ws.move_range("B1:C11", rows=0, cols=1)               #do not move row, move B1:C11 to the right side by +1
+ws["B1"].value = "kor"                                #column B will be emtpy. Update B1 as "kor"
+
+#2) move column and row together
+ws.move_range("C1:C11", rows=5, cols=-1)              #move column C(C1:C11) to the 5th row and to the left side on the column
+                                                      #result: C1:C11 data will override some data from column B
+wb.save("sample_move.xlsx")
   
+    
