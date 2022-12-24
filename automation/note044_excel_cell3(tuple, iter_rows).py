@@ -54,7 +54,6 @@ for col in ws.iter_cols():
 #   ex: for col in ws.iter_cols(min_row=2) <--- till max row and max column 
 # tip2: what's the difference between iter_rows and iter_cols? iter_rows pulls data horizontally, iter_cols vertically.
 
-
 #3-1) limit row range
 for row in ws.iter_rows(min_row=1, max_row=5):
   print(row[2].value)              #result: show data from C1(min 1st row of column C) to C5(max 5th row of column C) !! min/max_row starts from 1
