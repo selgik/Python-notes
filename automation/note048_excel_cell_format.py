@@ -44,6 +44,11 @@ ws.freeze_panes = "B2"
 ##        B2 will become a point where row/column freeze will be applied. 
 ##        Based on B2, left column (which is column A) and above row (which is 1st row) will be frozen.
 
+#7) merge/unmerge cells
+ws.merge_cells("E2:G2")
+ws["E2"].value = "Merged cells"
+ws.unmerge_cells("E2:G2")
+
 
 ########## 3. CONDITIONAL FORMATIING
 # task: for those cells where its value is >= 90, hightlight cell with green and change font to red color
