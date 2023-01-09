@@ -8,7 +8,7 @@ ws = wb.active
 
 ########## 1. PREPARE
 from openpyxl.drawing.image import Image
-
+pip install Pillow                      #type this in the terminal if you see a message of fetching image error
 
 ########## 2. INSERT IMAGE TO THE CELL
 img = Image("sample_image.png")         #let's create variable with the image file you want to insert into the cell
