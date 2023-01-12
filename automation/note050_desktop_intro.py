@@ -12,7 +12,7 @@ print(size)     #result: current screen size --> Size(width=1920, 1080)
 size[0]         #this will be width 
 size[1]         #this will be height
 
-########## 2. HOW DOES IT WORK
+########## 3. HOW DOES IT WORK
 # how does automation work in pyautogui? 
 # treat your desktop screen as an 'image'. In order to tell system to go to certain point, click and drag etc.,
 # you need to tell system a corresponding point, which is 'width' and 'height' of your screen.
