@@ -80,7 +80,7 @@ pyautogui.FALSESAFE = False
 #per action (per function) delay 1 seconds:
 pyautogui.PAUSE = 1
 
-#so in usage, it can be outside of the loo:
+#so in usage, it can be outside of the loop:
 pyautogui.PAUSE = 1
 for i in range(1,10):
   pyautogui.move(100,100)
