@@ -56,7 +56,7 @@ all changes have been made.
 ----
 
 ### 3. zsh: command not found 
-- Reference: [stake overflow: zsh pip error](https://https://stackoverflow.com/questions/42870537/zsh-command-cannot-found-pip) [stake overflow: zsh pyinstaller error](https://stackoverflow.com/questions/68684044/pyinstaller-command-could-not-be-found)
+- Reference: [stake overflow: zsh pip error](https://https://stackoverflow.com/questions/42870537/zsh-command-cannot-found-pip) , [stake overflow: zsh pyinstaller error](https://stackoverflow.com/questions/68684044/pyinstaller-command-could-not-be-found)
 - A. Situation: using PyInstaller, I was trying to export python scripts to executable app (for MacOS). I typed below code in the terminal.
 ```terminal
 pyinstaller --windowed test.py
