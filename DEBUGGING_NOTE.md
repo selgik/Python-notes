@@ -62,16 +62,16 @@ all changes have been made.
 pyinstaller --windowed test.py
 ``` 
 - B. Error 1: I saw zsh error as below, but I do have pyinstaller package installed already. 
-```python
-# zsh: command not found: pyinstaller
+```terminal
+zsh: command not found: pyinstaller
 ```  
 - C. Error 2: So I tried to locate pyinstaller by typing *which pyinstaller* in the terminal, and I saw next error.
-```python
-# pyinstaller not found
+```terminal
+pyinstaller not found
 ``` 
 - D. Error 3: I typed *pip unistall pyinstaller* to uninstall and re-install. I saw another error message in my termianl. Now system is saying I do not have pip either.
-```python
-# zsh: command not found: pip
+```terminal
+zsh: command not found: pip
 ```  
 - E. Fix for Error 3: As per reference link, I typed *pip3 uninstall pyinstellr* in the terminal and confirmed pip is correctly recognized.
 - F. Fix for Error 1: For *which pyinstaller* command, terminal still gave me an error. After googling, I found out that I should be using below instead:
