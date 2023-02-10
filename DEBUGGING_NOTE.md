@@ -73,7 +73,10 @@ pyinstaller not found
 ```terminal
 zsh: command not found: pip
 ```  
-- E. Fix for Error 3: As per reference link, I typed *pip3 uninstall pyinstellr* in the terminal and confirmed pip is correctly recognized.
+- E. Fix for Error 3: As per reference link, I typed *pip3* instead of *pip* in the terminal and confirmed command is correctly recognized.
+```terminal
+pip3 uninstall pyinstaller
+``` 
 - F. Fix for Error 1: For *which pyinstaller* command, terminal still gave me an error. After googling, I found out that I should be using below instead:
 ```terminal
 python3 which pyinstaller
