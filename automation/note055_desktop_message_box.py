@@ -1,5 +1,4 @@
 #note055_desktop_alert.py
-
 import pyautogui
 
 
