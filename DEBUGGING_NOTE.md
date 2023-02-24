@@ -115,7 +115,7 @@ Set-ExecutionPolicy RemoteSigned
 
 ### 5. Chrome page closes immediately after it's opend via selenium
 - Library: selenium
-- Reference: Note TBA, [StakeOverflow case] (https://stackoverflow.com/questions/47508518/google-chrome-closes-immediately-after-being-launched-with-selenium)
+- Reference: Note TBA, [StakeOverflow case](https://stackoverflow.com/questions/47508518/google-chrome-closes-immediately-after-being-launched-with-selenium)
 - A. Situation: to prepare web crawling, I downloaded chromedriver and moved .exe file to the same path where .py script is. I then tested below codes to see if Chrome is opening without any issues.
 ```python
 from selenium import webdriver
