@@ -3,7 +3,7 @@
 1. Type Error: list object is not callable
 2. [Errno 13] Permission denied
 3. zsh: command not found 
-4. Execution_Policies
+4. see about_Execution_Policies
 ----   
 
 
@@ -96,7 +96,7 @@ export PATH="$PATH:/path/to/pyinstaller"
 ``` 
 ----
 
-### 4. Execution_Policies
+### 4. see about_Execution_Policies
 - Environment: powershell
 - A. Situation: to prepare web scrawling, I created virtual environment with [venv](https://docs.python.org/3/library/venv.html). I then tried to activate via \Scripts\activate
 - B. Error:
