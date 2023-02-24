@@ -3,11 +3,13 @@
 1. Type Error: list object is not callable
 2. [Errno 13] Permission denied
 3. zsh: command not found 
+4. Execution_Policies
 ----   
 
 
 
 ### 1. Type Error: list object is not callable
+- Library: matplotlib
 - Reference: note038_scatterplot.py, [stake overflow case](https://stackoverflow.com/questions/35030659/unexpected-python-typeerror-list-object-is-not-callable)
 
 - A. Situation: I was trying to create scatterplot using below code 
@@ -35,6 +37,7 @@ Only when I restarted & run all for jupyter, lables were showing up.
 ----
 
 ### 2. [Errno 13] Permission denied
+- Library: openpyxl
 - Reference: note041_excel_cell.py
 - A. Situation: I was saving changes to excel as below
 ```python
@@ -56,6 +59,7 @@ all changes have been made.
 ----
 
 ### 3. zsh: command not found 
+- Environment: terminal
 - Reference: RPA-project/README.md>Part2, [stake overflow: zsh pip error](https://https://stackoverflow.com/questions/42870537/zsh-command-cannot-found-pip) , [stake overflow: zsh pyinstaller error](https://stackoverflow.com/questions/68684044/pyinstaller-command-could-not-be-found)
 - A. Situation: using PyInstaller, I was trying to export python scripts to executable app (for MacOS). I typed below code in the terminal.
 ```terminal
@@ -90,4 +94,20 @@ echo $PATH
 ```terminal
 export PATH="$PATH:/path/to/pyinstaller"
 ``` 
+----
+
+### 4. Execution_Policies
+- Environment: powershell
+- A. Situation: to prepare web scrawling, I created virtual environment with [venv](https://docs.python.org/3/library/venv.html). I then tried to activate via \Scripts\activate
+- B. Error:
+```terminal
+cannot be loaded because running script is disabled on this system. For more information, see about_Execution_Policies
+``` 
+- C. Fix: Run PowerShell as an administrator and change as below
+```terminal
+Get-ExecutionPolicy
+Set-ExecutionPolicy RemoteSigned
+``` 
+- By default, execution policy is set to "Restricted." This will prevent the execution of any script files for security purposes. By setting policy to RemoteSigned, virtual environment for selenium will be created by showing "(selenium)" in front of the path on the powershell.
+
   
