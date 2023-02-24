@@ -4,6 +4,7 @@
 2. [Errno 13] Permission denied
 3. zsh: command not found 
 4. see about_Execution_Policies
+5. Chrome page closes immediately after it's opend via selenium
 ----   
 
 
@@ -98,7 +99,8 @@ export PATH="$PATH:/path/to/pyinstaller"
 
 ### 4. see about_Execution_Policies
 - Environment: powershell
-- A. Situation: to prepare web scrawling, I created virtual environment with [venv](https://docs.python.org/3/library/venv.html). I then tried to activate via \Scripts\activate
+- Reference: TBA
+- A. Situation: to prepare web crawling, I created virtual environment with [venv](https://docs.python.org/3/library/venv.html). I then tried to activate via \Scripts\activate
 - B. Error:
 ```terminal
 cannot be loaded because running script is disabled on this system. For more information, see about_Execution_Policies
@@ -109,5 +111,32 @@ Get-ExecutionPolicy
 Set-ExecutionPolicy RemoteSigned
 ``` 
 - By default, execution policy is set to "Restricted." This will prevent the execution of any script files for security purposes. By setting policy to RemoteSigned, virtual environment for selenium will be created by showing "(selenium)" in front of the path on the powershell.
+----
+
+### 5. Chrome page closes immediately after it's opend via selenium
+- Library: selenium
+- Reference: Note TBA, [StakeOverflow case] (https://stackoverflow.com/questions/47508518/google-chrome-closes-immediately-after-being-launched-with-selenium)
+- A. Situation: to prepare web crawling, I downloaded chromedriver and moved .exe file to the same path where .py script is. I then tested below codes to see if Chrome is opening without any issues.
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome()
+driver.get("http://www.python.org")
+```  
+- B. Error: Chrome pages opens and it immediately closes after a second.
+- C. Fix: add sleep module as below
+```python
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+import time
+
+driver = webdriver.Chrome()
+driver.get("http://www.python.org")
+time.sleep(10)
+```  
+- (Q) My Chrome is 64-bit but Chromedriver is 32-bit. Could it cause the issue? (A) No. Official site confirmed chromdriver win32 works for both 32 and 64-bits.
 
   
