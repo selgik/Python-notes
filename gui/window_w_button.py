@@ -1,5 +1,6 @@
 #note_window_w_button.py
 #credit: Youtube(Code your dreams: 53 tkinter) 
+#flow: (1) user clicks a button (2) random quotes will be generated 
 
 
 #1. PREPARE LIBRARIES
@@ -35,8 +36,6 @@ bottom_T = canvas.create_text(250, 200, text = "", fill="gray",\
 
 
 #6. PREPARE FUNCTION TO LINK TO THE BUTTON 
-#Once I click button, I want quotes and authors are showing on the window
-
 def click_btn():
     random_quote=random.randint(0,2)
     canvas.itemconfig(upper_T, text=quotes[random_quote])
