@@ -30,4 +30,8 @@
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note040 ~
 
+## Part5: Gui
+- Folder: gui
+- TBD
+
 
