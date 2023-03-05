@@ -84,7 +84,7 @@ pip3 uninstall pyinstaller
 ``` 
 - F. Fix for Error 1: For *which pyinstaller* command, terminal still gave me an error. After googling, I found out that I should be using below instead:
 ```terminal
-python3 which pyinstaller
+pip3 show pyinstaller
 ``` 
 - G. Fix for Error 2: When I checked package location via F, I noticed that pyinstaller, pip, python are all installed in different locations and from googling I concluded, that could be the root cause of problem. System was having problem finding out packages and applying them when I typed commands in the terminal. (See reference link) So I had to fix PATH.
 - G-(1): first, find my PATH
