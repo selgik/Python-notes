@@ -82,19 +82,24 @@ zsh: command not found: pip
 ```terminal
 pip3 uninstall pyinstaller
 ``` 
-- F. Fix for Error 1: For *which pyinstaller* command, terminal still gave me an error. After googling, I found out that I should be using below instead:
+- F. Fix for Error 1, 2: For *which pyinstaller* command, terminal still gave me an error. After googling, I found out that I should be using below instead:
 ```terminal
 pip3 show pyinstaller
 ``` 
-- G. Fix for Error 2: When I checked package location via F, I noticed that pyinstaller, pip, python are all installed in different locations and from googling I concluded, that could be the root cause of problem. System was having problem finding out packages and applying them when I typed commands in the terminal. (See reference link) So I had to fix PATH.
-- G-(1): first, find my PATH
+- ~~G. Fix for Error 2: When I checked package location via F, I noticed that pyinstaller, pip, python are all installed in different locations and from googling I concluded, that could be the root cause of problem. System was having problem finding out packages and applying them when I typed commands in the terminal. (See reference link) So I had to fix PATH.~~
+- ~~G-(1): first, find my PATH~~
 ```terminal
-echo $PATH
-``` 
-- G-(2): add the location of the pyinstaller executable to my PATH (replace /path/to/pyinstaller to actual path)
+[OUTDATED] echo $PATH
+```
+- ~~G-(2): add the location of the pyinstaller executable to my PATH (replace /path/to/pyinstaller to actual path)~~
 ```terminal
-export PATH="$PATH:/path/to/pyinstaller"
+[OUTDATED] export PATH="$PATH:/path/to/pyinstaller"
 ``` 
+- G. Fix: instead of this code *pyinstaller --windowed test.py*, use below
+```terminal
+python -m PyInstaller --windowed test.py
+```
+- [Note from [Pyinstaller Org](https://pyinstaller.org/en/stable/installation.html#installing-in-mac-os-x)] *If you cannot use the pyinstaller command due to the scripts directory not being in PATH, you can instead invoke the PyInstaller module, by running python -m PyInstaller (pay attention to the module name, which is case sensitive). This form of invocation is also useful when you have PyInstaller installed in multiple python environments, and you cannot be sure from which installation the pyinstaller command will be ran.*
 ----
 
 ### 4. see about_Execution_Policies
