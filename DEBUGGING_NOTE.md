@@ -95,7 +95,7 @@ pip3 show pyinstaller
 ```terminal
 [OUTDATED] export PATH="$PATH:/path/to/pyinstaller"
 ``` 
-- G. Fix: instead of this code *pyinstaller --windowed test.py*, use below
+- G. Fix: instead of this code *pyinstaller --windowed test.py*, use below instead. Also, you would have to move .py file to the right location (in my case: /Users/myname/)
 ```terminal
 python -m PyInstaller --windowed test.py
 ```
