@@ -54,7 +54,7 @@ xsize = os.path.getsize(xfile)
 print(xsize)
 
 
-########## 4. GET THE LIST OF FILE
+########## 4. GET THE LIST OF FILES
 #1) Get list of file and directories in given path
 print(os.listdir())               #result: gets all folder/files from current workspace
 print(os.listdir("rpa_basic"))    #result: gets all folder/files from given folder ex: ['1_excel', '2_desktop']
