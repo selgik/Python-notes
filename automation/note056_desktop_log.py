@@ -54,6 +54,6 @@ logger.setLevel(logging.DEBUG)    #setting log level
 logger.addHandler(steramHandler)
 logger.addHandler(fileHandler)
 
-logger.debug("this is as test")   #test
+logger.debug("this is a test")   #test
 
   
