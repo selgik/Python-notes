@@ -101,3 +101,19 @@ for root, dirs, files in os.walk("."):
 print(result)
 
    
+########## 6. CHECK WHETHER IT'S FILE OR FOLDER. DOES IT EXIST?
+#1) check whether it's file or folder
+print(os.path.isdir("rpa_basic"))               #result: True 
+print(os.path.isfile("rpa_basic"))              #result: False
+print(os.path.isdir("rpa_file.py"))             #result: False
+print(os.path.isfile("rpa_file.py"))            #result: True
+print(os.path.isfile("rpa_file.pppppy"))        #result: False (.pppppy is typo but it won't say such file does not exist)
+
+#2) check whether file exist
+print(os.path.exists("rpa_file.pppppy"))        #result: False
+if os.path.exist("rpa_file.pppppy"):
+      print("File exists")
+else:
+      print("There is no such file")            #result: There is no such file
+
+      
