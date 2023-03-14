@@ -59,10 +59,13 @@ shutil.copy2("abc.png", "test_folder/abc_copy3.png")
 #all subfolders and files will be copied/moved too
 shutil.copytree("test_folder", "test_folder2")
 
-#5) move folder
+#5) move folder (or rename folder)
 shutil.move("test_folder", "test_folder2")  #test_folder will be moved under test_folder2 (becoming subfolder)
 shutil.move("test_folder2", "test_folder")  #there is no test_folder to move, so test_folder2 name will be changed to test_folder
 
 shutil.move("test_folder", "test_renamed_folder") #giving folder name change effct from test_folder to test_renamed_folder
 
+#6) remove folder
+shutil.rmtree("test_renamed_folder")        #be careful, no alert will be shown but remove folder and all sub-folders/files
+  
   
