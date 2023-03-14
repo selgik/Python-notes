@@ -66,6 +66,6 @@ shutil.move("test_folder2", "test_folder")  #there is no test_folder to move, so
 shutil.move("test_folder", "test_renamed_folder") #giving folder name change effct from test_folder to test_renamed_folder
 
 #6) remove folder
-shutil.rmtree("test_renamed_folder")        #be careful, no alert will be shown but remove folder and all sub-folders/files
+shutil.rmtree("test_renamed_folder")        #be careful, no alert will be shown but remove folder and its sub-folders/files
   
   
