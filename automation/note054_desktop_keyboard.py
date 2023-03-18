@@ -29,6 +29,7 @@ pyautogui.keyUp("a")
 pyaugogui.keyUp("ctrl")
 
 #3) above codes however are too long, let's shorten them
+### also, use it when you need to press multiple keys at the same time. 2-2 won't work for simultaneous press.
 pyautogui.hotkey("ctrl", "a")
 pyautogui.hotkey("ctrl", "alt", "shift", "a")
 #flow: keydown ctrl>alt>shift>a --> keyup a>shift>alt>ctrl
