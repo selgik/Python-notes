@@ -21,7 +21,14 @@ print(file_menu)            #ex result: Box(left=73, top=10, width=43, height=36
 pyautogui.moveTo(file_menu) #result: cursor will be moved to the file menu
 pyautogui.click(file_menu)  #result: file button will be clicked
                             #if system can't find the image, it will say 'None'
-  
+
+#4) what if you are trying to apply action to changing icon?
+# for example, you may want to adjust font size from current(13) to 20 in Paint app
+# font sizes change so it is very difficult to save screenshot of it and apply action
+# for such case, choose static image and apply relative coordinate to apply action
+btn_brush = pyautogui.locateOnScreen("btn_brush.png") #save "Brush" icon near "Text" icon which is static image
+pyautogui.click(btn_brush.left-200, btn_brush.top+5000
+
   
 ########## 2. locateOnScreen VS locateAllOnScreen
 # let's say you are checking on the check-boxes
