@@ -1,7 +1,7 @@
 ## LOGGING HOW-TO DOC: https://docs.python.org/3/howto/logging.html
 ## REFERENCE VIDEO   : https://www.youtube.com/watch?v=-ARI4Cz-awo&ab_channel=CoreySchafer
 
-#note056_desktop_log.py
+#note057_desktop_log.py
 import logging
 
 
