@@ -14,6 +14,7 @@
 - Folder: pandas
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note015 - note025
+    - exercise 003
     - From note015 below dataframe is used:
 
 ![df](https://user-images.githubusercontent.com/91002274/196036209-5749b56d-ef46-44e6-9c6f-20421492495b.png)
@@ -23,12 +24,14 @@
 - Folder: matplotlib
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note026 - note039
+    - exercise 004
 
 ## Part4: Automation (RPA)
 - Tool : Visual Studio Code
 - Folder: automation
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note040 ~
+    - exercise 005 - exercise 006
 
 ## Part5: Graphical User Interface (GUI)
 - Folder: gui
