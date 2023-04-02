@@ -1,4 +1,4 @@
-#note058_desktop_file&folder.py
+#note059_desktop_file&folder.py
 import os
 import shutil
 
