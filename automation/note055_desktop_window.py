@@ -1,4 +1,4 @@
-#note054_desktop_window.py
+#note055_desktop_window.py
 #window functions will only work in Window, not in MacOS
 
 import pyautogui
