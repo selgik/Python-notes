@@ -1,0 +1,88 @@
+<!-- 
+1. BASIC OF HTML 
+SAMPLE HTML STRUCTURE 
+-->
+<html>    
+  <head>
+    <meta charset="utf-8">
+    <title> 샘플 홈페이지 </title>
+  </head>
+  <body>
+    <input type="text" value="Input Your ID">.
+    <input type="password">
+    <input type="button" value="Log In">
+    <a href="https://google.com"> Go To Google </a>
+  </body>
+</html>
+<!-- 
+Explanation:
+  <head>: element
+  <input type="password">: in this element, we have tag name "input" and attribute "type"
+Result: we have web-page with the title "샘플 홈페이지"
+  And there are two input boxes as text(ID), password; also a button with label "Log In" and hyperlink to Google 
+-->
+
+
+<!-- 
+2. XPATH 
+2-1. TO BETTER UNDERSTAND XPATH, LET'S THINK ABOUT A SCHOOL AS IN A HTML STRUCTURE 
+-->
+<school name="Sylvia's Magic School">
+  <grade value="1st grade">
+    <class value="class A">
+      <student value="no1"> Adam A </student>
+      <student value="no2"> Damian D </student>
+      <student value="no3"> Maciek M </student>
+      <student value="no4"> Adam A </student>
+    </class>
+  </grade>
+  <grde value="2nd grade">
+    <class value="class A">
+      <student value="no1"> Michal M </student>
+    </class>
+  </grade>
+  <grde value="3rd grade"/>
+</school>
+<!-- 
+Explanation:
+  parent-child relationship: <school> is parnet and <grade> tag is child 
+  sibling relationship: <student> are sibligns
+-->
+
+<!--
+2-2. SEARCHING FOR SPECIFIC CONTENTS IN HTML
+  In order to search for Damian D, we have to go down from school > 1st grade > class A > student 
+  Xpath is path to find specific element or attribute. (According to W3Schools: syntax to identify and navigate nodes in an XML document) 
+  In order to apply action (especially for web-scrapping), we need to know exact address
+-->
+/school/grade/class/student[2] 
+/html/body/div/div/div/span/a...
+
+<!-- 
+2-3. HOW CAN WE SIMPLIFY PATH?
+  If need to search for Adam A, we will be confused which Adam is needed. no1 Adam or no4 Adam? 
+  For such case, giving unique code could help to find exact person in need, and xpath can be simplified 
+-->
+      <student value="no1" code="1-1-1-"> Adam A </student>
+      <student value="no2" code="1-1-2-"> Damian D </student>
+      <student value="no3" code="1-1-3-"> Maciek M </student>
+      <student value="no4" code="1-1-4-"> Adam A </student>
+<!-- 
+Simplified:
+  From: /school/grade/class/student[2] 
+  To: //*[code="1-1-4"]
+Explanation:
+  / means: one layer below 
+  // means: every lader (nodes) below
+  @ means: attribute 
+-->
+
+<!-- 
+2-4. GETTING XPATH FROM WEB SITE
+  Example web site: https://www.w3schools.com/html/
+  Scenario: I want ot get XPATH to HTML tab
+  How to: Go to "HTML" tab on the page > right click > inspect > you will see highlighted section > right click > copy > copy Xpath
+-->
+//*[@id="topnav"]/div/div[1]/a[3]
+
+  
