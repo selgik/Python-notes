@@ -3,7 +3,7 @@
 - Venv Documentation
 
 # Why Virtual Environment?
-- We may need to use particular library version depending on projects
+- We may need to use particular library version depending on the projects
 - For example, Python 3.5 library A11 for project "Nice" and Python 3.9 library A13 for project "Super"
 - It would be then easier to separate area (virtual enviroments) for each projects
 
