@@ -1,6 +1,6 @@
 # Requirements:
 - Visual Studio
-- venv (virtual environment)
+- venv (review Python-practice/virtual_environment/set_up_venv.md first)
 
 # How to Install Selenium and Set Up Browser?
 1. within the terminal (of virtual environment) type *pip install selenium*
