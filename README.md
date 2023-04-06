@@ -1,7 +1,7 @@
 # Python-practice
 - In Progress
-- DEBUGGING_NOTE.md file has been generated (Dec 04, 2022)
-- HOW_TO_IDLE.md file has been generated (Feb 02, 2023)
+- DEBUGGING_NOTE.md file has been generated (Dec, 2022)
+- HOW_TO_IDLE.md file has been generated (Feb, 2023)
 
 ## Part1: Basic
 - Tool : Visual Studio Code
@@ -32,6 +32,10 @@
 - Credit: Youtube "Python Coding Lecture" by Nado Coding(나도코딩)
     - note040 ~
     - exercise 005 - exercise 006
+- Folder2: virtual_environment
+- Credit2: Youtube "RPA Basic Learning from Imiage Crawling with Python Selenium" by JoCoding(조코딩)
+    - set_up_venv.md
+    - set_up.selenium.md
 
 ## Part5: Graphical User Interface (GUI)
 - Folder: gui
