@@ -3,7 +3,10 @@
 - venv (review Python-practice/virtual_environment/set_up_venv.md first)
 
 # How to Install Selenium and Set Up Browser?
-1. within the terminal (of virtual environment) type *pip install selenium*
+1. within the terminal (of virtual environment) type 
+    ```terminal
+    pip install selenium
+    ```
 2. set up browser (ex. Chrome)
     - on Chrome, search for 'chromedriver' and download it by matching your current Chrome version
     - once unzipped downloaded file, you will see chromedriver.exe
