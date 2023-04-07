@@ -25,7 +25,7 @@
     ```terminal
     python -m venv selenium
     ```
-    new folder will be created within Visual Studio workplace
+    new folder will be created within Visual Studio workspace
 4. let's go to the virtual environment
    ```terminal
     C:\yourname\selenium\Scripts
@@ -38,7 +38,7 @@
     - (selenium) will appear before directory address such as (selenium) C:\ ...
 6. what does it mean? 
     - that means you are inside the virtual environment. 
-    - any installation of packages or running codes will happen in virtual environment not affecting main Python workplace
+    - any installation of packages or running codes will happen in virtual environment not affecting main Python workspace
  
     
 THE END
