@@ -1,5 +1,6 @@
 #note061_web_selenium.py
-#refer to Python-practice/virtual_environment/ for setting up virtual environment with venv, selenium and webdriver
+#refer to Python-practice/virtual_environment/ --> for setting up virtual environment with venv, selenium and webdriver
+#refer to https://selenium-python.readthedocs.io/locating-elements.html --> for attributes availalbe for the By class
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
