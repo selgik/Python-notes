@@ -4,7 +4,8 @@
 2. [Errno 13] Permission denied
 3. zsh: command not found 
 4. see about_Execution_Policies
-5. Chrome page closes immediately after it's opend via selenium
+5. Chrome page closes immediately after it's opent via selenium
+6. Permission issue to read/write file when converting py script into app
 ----   
 
 
@@ -144,4 +145,25 @@ time.sleep(10)
 ```  
 - (Q) My Chrome is 64-bit but Chromedriver is 32-bit. Could it cause the issue? (A) No. Official site confirmed chromdriver win32 works for both 32 and 64-bits.
 
-  
+
+### 6. Permission issue to read/write file when converting py script into app
+- Library: tempfile
+- A. Situation: I converted [py script](https://github.com/selgik/Python-project/blob/main/button-to-start/pyscriptv4.py), into an app using py2app. Clicking "Save" button should either create/save or edit/save a txt file. But nothing happened.
+- B. Error: Permission issue occured. When user downloaded the app, nothing happened as apparently there was a permission issue and no txt file could have been generated. My original code chunk looked like below:
+``` python
+    def openURL():
+    # Create a file to store URLs if it doesn't exist
+    if not os.path.exists("ops_helper_urls.txt"):
+        with open("ops_helper_urls.txt", "w") as f:
+            f.write("https://apple.com\n")
+```
+- C. Fix: Replaced code with tempfile library to avoid permissioning issue as below:
+``` python
+def openURL():
+    # Create a file to store URLs if it doesn't exist
+    file_path = os.path.join(tempfile.gettempdir(), "ops_helper_urls.txt")
+    if not os.path.exists(file_path):
+        with open(file_path, "w") as f:
+            f.write("https://apple.com\n")
+```
+
