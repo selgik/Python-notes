@@ -144,6 +144,7 @@ driver.get("http://www.python.org")
 time.sleep(10)
 ```  
 - (Q) My Chrome is 64-bit but Chromedriver is 32-bit. Could it cause the issue? (A) No. Official site confirmed chromdriver win32 works for both 32 and 64-bits.
+----
 
 
 ### 6. Permission issue to read/write file when converting py script into app
@@ -166,4 +167,4 @@ def openURL():
         with open(file_path, "w") as f:
             f.write("https://apple.com\n")
 ```
-
+----
