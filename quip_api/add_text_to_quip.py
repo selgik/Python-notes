@@ -1,6 +1,6 @@
 import requests
 
-# Access token can be obtained here: https://quip-apple.com/dev/token
+# Access token can be obtained here: https://quip.com/dev/token
 access_token = 'xyz123'
 
 document_api_url = 'https://platform.quip.com/1/threads/edit-document'
