@@ -3,7 +3,7 @@
 import requests
 
 # Access token an be obtained here: https://quip-apple.com/dev/token
-access_token = 'xyz'
+access_token = 'xyz1'
 
 # Define the Quip API endpoint for the user's information
 # link may look different for quip corporate users
